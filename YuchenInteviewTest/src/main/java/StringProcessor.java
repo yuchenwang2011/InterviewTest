@@ -18,7 +18,7 @@ public class StringProcessor {
         //<> is fullfilled in case language supported level is different on other computers
         if(input == null || input.length() == 0) return new Pair<Integer, String>(maxLength,longestWord);
 
-        input = input.trim().replaceAll("[^A-Za-z0-9]", " ");
+        input = input.trim().replaceAll("[^A-Za-z0-9]", " "); //"[^A-Za-z0-9'_]"
         String[] words = input.split(" ");
 
         for(String word : words){
