@@ -39,18 +39,6 @@ class Deck{
   List<Card> list;
   int size;
   
-  public Deck(int size){
-    this.size = 0;
-    
-    for(Suit suit : Suit.values()){
-      for(int i = 1; i <= 13; i++){
-        if(this.size == size) break;
-        list.add(new Card(suit, i));
-        this.size++;
-      }
-    }
-  }
-  
   public Deck(){
     this.size = 0;
     list = new ArrayList<>();
